@@ -37,7 +37,7 @@
 			# source = ~/.config/hypr/myColors.conf
 
 			# Set programs that you use
-			$terminal = wezterm
+			$terminal = alacritty
 			$fileManager = dolphin
 			$menu = wofi --show drun
 

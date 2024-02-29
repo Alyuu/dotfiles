@@ -99,7 +99,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   	wget
-	wezterm
   ];
 
   programs.hyprland = {
