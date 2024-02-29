@@ -27,7 +27,6 @@
   # environment.
   home.packages = with pkgs; [
 	neovim
-	wezterm
 	floorp
 	wofi
 	git
