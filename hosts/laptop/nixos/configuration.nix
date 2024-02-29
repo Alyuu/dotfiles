@@ -98,10 +98,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	vim
-	neovim
-	wget
-	wezterm
+  	wget
   ];
 
   programs.hyprland = {
@@ -113,6 +110,8 @@
 	enable = true;
 	defaultEditor = true;
   };
+
+  programs.ssh.startAgent = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
