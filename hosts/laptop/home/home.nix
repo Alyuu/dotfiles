@@ -16,6 +16,8 @@
 		floorp
 		wofi
 		git
+		ranger
+		discord
 	];
 
 	programs.git = {

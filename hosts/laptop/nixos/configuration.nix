@@ -97,6 +97,11 @@
   	wget
   ];
 
+  programs.hyprland = {
+  	enable = true;
+	package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  };
+
   programs.neovim = {
 	enable = true;
 	defaultEditor = true;
