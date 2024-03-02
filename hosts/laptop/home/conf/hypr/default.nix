@@ -19,6 +19,7 @@
 
 			exec-once = [
 				"swww init & sleep 0.5 & swww img ~/Pictures/wallpapers/vagabond_centered.jpeg"
+				"hyprctl setcursor Bibata-Modern-Classic 16"
 				"waybar"
 			];
 
