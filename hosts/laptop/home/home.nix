@@ -18,6 +18,7 @@
 		git
 		ranger
 		discord
+		nerdfonts
 	];
 
 	programs.git = {
