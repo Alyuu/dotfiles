@@ -159,13 +159,16 @@
 					"tray"
 			];
 			"hyprland/workspaces" = {
-				"format" = "{icon}";
+				format = "{icon}";
 				format-icons = {
 					"1" = "一";
 					"2" = "二";
 					"3" = "三";
 					"4" = "四";
 					"5" = "五";
+				};
+				persistent-workspaces = {
+					"*" = 5;
 				};
 			};
 			"custom/cava-internal" = {
