@@ -18,6 +18,7 @@
 			monitor = ",preferred,auto,1";
 
 			exec-once = [
+				"swww init & sleep 0.5 & swww img ~/Pictures/wallpapers/vagabond_centered.jpeg"
 				"waybar"
 			];
 
