@@ -168,7 +168,7 @@
 					"5" = "五";
 				};
 				persistent-workspaces = {
-					"*" = 5;
+					"*" = "5";
 				};
 			};
 			"custom/cava-internal" = {
