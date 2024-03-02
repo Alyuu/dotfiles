@@ -50,8 +50,8 @@
 				gaps_in = 5;
 				gaps_out = 20;
 				border_size = 4;
-				"col.active_border" = "rgba(8EC07C)";
-				"col.inactive_border" = "rgba(689D6A)";
+				"col.active_border" = "rgba(8ec07c)";
+				"col.inactive_border" = "rgba(689d6a)";
 
 				layout = "master";
 			};
@@ -79,12 +79,12 @@
 				bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
 
 				animation = [
-					"animation = windows, 1, 7, myBezier"
-					"animation = windowsOut, 1, 7, default, popin 80%"
-					"animation = border, 1, 10, default"
-					"animation = borderangle, 1, 8, default"
-					"animation = fade, 1, 7, default"
-					"animation = workspaces, 1, 6, default"
+					"windows, 1, 7, myBezier"
+					"windowsOut, 1, 7, default, popin 80%"
+					"border, 1, 10, default"
+					"borderangle, 1, 8, default"
+					"fade, 1, 7, default"
+					"workspaces, 1, 6, default"
 				];
 			};
 
