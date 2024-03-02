@@ -3,5 +3,6 @@
 		./hypr
 		./wezterm
 		./waybar
+		./gtk
 	];
 }
