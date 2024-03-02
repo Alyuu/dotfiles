@@ -50,8 +50,8 @@
 				gaps_in = 5;
 				gaps_out = 20;
 				border_size = 4;
-				"col.active_border" = "rgba(8ec07c)";
-				"col.inactive_border" = "rgba(689d6a)";
+				"col.active_border" = "rgba(8ec07cff)";
+				"col.inactive_border" = "rgba(689d6aff)";
 
 				layout = "master";
 			};
