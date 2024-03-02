@@ -15,7 +15,7 @@
 		enable = true;
 
 		settings = {
-			monitor = ",preferred,auto,0.8";
+			monitor = ",preferred,auto,0.9";
 
 			exec-once = [
 				"waybar"
