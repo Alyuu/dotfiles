@@ -19,6 +19,7 @@
 		ranger
 		discord
 		nerdfonts
+		pamixer
 	];
 
 	programs.git = {
