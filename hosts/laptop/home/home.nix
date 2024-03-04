@@ -20,6 +20,7 @@
 		discord
 		nerdfonts
 		pamixer
+		gcc
 	];
 
 	programs.git = {
