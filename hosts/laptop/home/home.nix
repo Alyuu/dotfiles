@@ -21,6 +21,7 @@
 		nerdfonts
 		pamixer
 		gcc
+		obsidian
 	];
 
 	programs.git = {
