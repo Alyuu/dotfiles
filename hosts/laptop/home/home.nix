@@ -23,6 +23,7 @@
 		gcc
 		obsidian
 		nodejs_21
+		wl-clipboard
 	];
 
 	programs.git = {
