@@ -22,6 +22,7 @@
 		pamixer
 		gcc
 		obsidian
+		nodejs_21
 	];
 
 	programs.git = {
