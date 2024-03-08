@@ -39,7 +39,6 @@
 			plenary-nvim
 			{
 				plugin = telescope-nvim;
-				type = "lua";
 				config = toLuaFile ./config/plugins/telescope.lua;
 			}
 			telescope-fzf-native-nvim
@@ -54,7 +53,6 @@
 					p.tree-sitter-python
 					p.tree-sitter-json
 				]));
-				type = "lua";
 				config = toLuaFile ./config/plugins/treesitter.lua;
 			}
 		];
