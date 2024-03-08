@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }:
 
 {
-    home.file = {
+    home.file."zsh-config" = {
         source = ./config;
         target = ".config/zsh";
     };
