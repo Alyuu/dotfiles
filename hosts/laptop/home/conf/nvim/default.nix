@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-	programs.nvim = {
+	programs.neovim = {
 		enable = true;
 
 		viAlias = true;
