@@ -12,7 +12,6 @@
 
 	home.packages = with pkgs; [
 		alacritty
-		neovim
 		floorp
 		wofi
 		git
