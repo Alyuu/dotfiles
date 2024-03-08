@@ -5,5 +5,6 @@
 		./waybar
 		./gtk
 		./neovim
+        ./zsh
 	];
 }
