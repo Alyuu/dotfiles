@@ -38,5 +38,5 @@
 		# 		config = ./config/plugins/telescope.lua;
 		# 	}
 		# ]
-	}
+	};
 }
