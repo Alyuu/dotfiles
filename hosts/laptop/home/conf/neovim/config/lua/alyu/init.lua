@@ -1,10 +1,10 @@
-# Standard nvim options
+-- Standard nvim options
 require("alyu.options")
 
-# Define keymaps
+-- Define keymaps
 require("alyu.keymaps")
 
-# Init lazy
+-- Init lazy
 require("alyu.lazy-init")
 
 vim.o.background = "dark" -- or "light" for light mode
