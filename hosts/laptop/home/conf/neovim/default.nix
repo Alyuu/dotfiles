@@ -1,7 +1,12 @@
 { config, pkgs, ... }:
 
 {
-	programs.neovim = {
+	programs.neovim = 
+	let
+		toLua = str: "lua << EOF\n${str}\nEOF\n";
+		toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
+	in
+	{
 		enable = true;
 
 		viAlias = true;
@@ -35,7 +40,7 @@
 			{
 				plugin = telescope-nvim;
 				type = "lua";
-				config = ./config/plugins/telescope.lua;
+				config = toLuaFile ./config/plugins/telescope.lua;
 			}
 			telescope-fzf-native-nvim
 			
@@ -50,7 +55,7 @@
 					p.tree-sitter-json
 				]));
 				type = "lua";
-				config = ./config/plugins/treesitter.lua;
+				config = toLuaFile ./config/plugins/treesitter.lua;
 			}
 		];
 	};
