@@ -1,2 +1,2 @@
-# Set mapleader
+-- Set mapleader
 vim.g.mapleader = " "
