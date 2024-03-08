@@ -4,6 +4,6 @@
 		./wezterm
 		./waybar
 		./gtk
-		./nvim
+		./neovim
 	];
 }
