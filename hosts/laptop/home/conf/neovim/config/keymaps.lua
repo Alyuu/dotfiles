@@ -1,4 +1,4 @@
-# Set mapleader
+-- Set mapleader
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
