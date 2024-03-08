@@ -33,7 +33,7 @@
 			# telescope
 			plenary-nvim
 			{
-				plugin = teleoscope-nvim;
+				plugin = telescope-nvim;
                 type = "lua";
 				config = ./config/plugins/telescope.lua;
 			}
