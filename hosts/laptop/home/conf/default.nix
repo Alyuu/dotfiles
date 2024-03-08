@@ -6,5 +6,6 @@
 		./gtk
 		./neovim
         ./zsh
+        ./alacritty
 	];
 }
