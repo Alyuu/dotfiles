@@ -34,13 +34,13 @@
 	home.file = {
 	};
 
-	activation = {
-		installConfig = ''
-			if [ ! -d "${config.home.homeDirectory}/.config/nvim" ]; then
-				${pkgs.git}/bin/git clone --depth 1 https://github.com/Alyuu/nvim ${config.home.homeDirectory}/.config/nvim
-			fi
-		'';
-	};
+	# activation = {
+	# 	installConfig = ''
+	# 		if [ ! -d "${config.home.homeDirectory}/.config/nvim" ]; then
+	# 			${pkgs.git}/bin/git clone --depth 1 https://github.com/Alyuu/nvim ${config.home.homeDirectory}/.config/nvim
+	# 		fi
+	# 	'';
+	# };
 
 	home.sessionVariables = {
 		# EDITOR = "emacs";
