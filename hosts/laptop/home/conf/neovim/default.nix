@@ -9,7 +9,7 @@
 		vimdiffAlias = true;
 
 		extraLuaConfig = ''
-			${builtins.readFile ./config/init.lua}
+			${builtins.readFile ./config}
 		'';
 		
 		# extraLuaConfig = ''
