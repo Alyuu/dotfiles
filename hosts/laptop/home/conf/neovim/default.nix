@@ -1,17 +1,17 @@
 { config, pkgs, ... }:
 
 {
+    home.file."neovim-config" = {
+        source = "./config/";
+        target = ".config/nvim";
+    };
+
 	programs.neovim = {
 		enable = true;
 
 		viAlias = true;
 		vimAlias = true;
 		vimdiffAlias = true;
-
-        preBuild = ''
-            mkdir -p $out/home/$USER/.config/nvim
-            cp -r ${toString ./config}/* $out/home/$USER/.config/nvim
-        '';
 
         #extraLuaConfig = ''
         #    lua << EOF
