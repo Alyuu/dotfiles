@@ -23,6 +23,7 @@
 		obsidian
 		nodejs_21
 		wl-clipboard
+        spotify
 	];
 
 	programs.git = {
