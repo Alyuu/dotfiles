@@ -34,7 +34,7 @@
                 };
             };
             shell = {
-                program = "/usr/bin/env zsh";
+                program = "zsh";
             };
         };
     };
