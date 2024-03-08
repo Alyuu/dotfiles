@@ -132,7 +132,7 @@ in {
     [ -f "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && \
     source "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
 
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#${config.colorScheme.colors.base03}"
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ebdbb2"
     bindkey '^ ' autosuggest-accept
 
     [ -f "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && \
