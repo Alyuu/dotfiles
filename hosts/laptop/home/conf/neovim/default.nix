@@ -52,6 +52,6 @@
 				type = "lua";
 				config = ./config/plugins/treesitter.lua;
 			}
-		]
+		];
 	};
 }
