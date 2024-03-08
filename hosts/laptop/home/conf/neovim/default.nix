@@ -2,7 +2,7 @@
 
 {
     home.file."neovim-config" = {
-        source = "./config/";
+        source = ./config/;
         target = ".config/nvim";
     };
 
