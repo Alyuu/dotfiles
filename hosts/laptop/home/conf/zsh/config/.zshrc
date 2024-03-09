@@ -15,8 +15,10 @@ HISTFILE=~/.cache/zsh/history
 zsh_add_file ".p10k.zsh"
 
 # plugins
-zsh_add_file "plugins/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
-zsh_add_file "plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+[ -f "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && \
+    source "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+[ -f "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && \
+    source "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
