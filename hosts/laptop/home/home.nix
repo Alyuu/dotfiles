@@ -24,6 +24,7 @@
 		nodejs_21
 		wl-clipboard
         spotify
+        zsh
 	];
 
 	programs.git = {
