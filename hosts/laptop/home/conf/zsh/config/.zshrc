@@ -4,6 +4,8 @@
 autoload -U colors && colors
 
 # history
+HISTSIZE=10000
+SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
 # source
