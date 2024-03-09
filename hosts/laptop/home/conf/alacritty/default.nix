@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... } = 
+{ config, pkgs, lib, ... }: 
 
 {
     home.packages = lib.optionals config.programs.alacritty.enable [pkgs.nerdfonts];
