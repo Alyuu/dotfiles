@@ -20,4 +20,9 @@
         #".local/share/zsh/nix-zsh-completions".source = "${pkgs.nix-zsh-completions}/share/zsh/plugins/nix";
         #".local/share/zsh/zsh-vi-mode".source = "${pkgs.zsh-vi-mode}/share/zsh-vi-mode";
     };
+
+    # Shell plugins
+    home.packages = with pkgs; [
+        zellij
+    ];
 }
