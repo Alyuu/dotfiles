@@ -1,9 +1,16 @@
 { config, pkgs, ... }:
 
 {
-    home.file."neovim-config" = {
-        source = ./config;
-        target = ".config/nvim";
+    #home.file."neovim-config" = {
+    #    source = ./config;
+    #    target = ".config/nvim";
+    #};
+
+    home.activation = {
+        neovimConfig = ''
+            mkdir -p ${config.home.homeDirectory}/.config/nvim
+            cp -r ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
+        '';
     };
 
 	programs.neovim = {

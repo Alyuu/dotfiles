@@ -25,6 +25,7 @@
 		wl-clipboard
         spotify
         zsh
+        brightnessctl
 	];
 
 	programs.git = {

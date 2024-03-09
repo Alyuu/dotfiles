@@ -8,5 +8,5 @@
     home.file."zellij-config" = {
         source = ./config;
         target = ".config/zellij";
-    }
+    };
 }
