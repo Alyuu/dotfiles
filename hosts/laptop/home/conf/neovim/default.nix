@@ -9,9 +9,11 @@
     home.activation = {
         neovimConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/nvim
-            cp -r ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
+            sudo cp -r ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
         '';
     };
+
+    home.file.".config/nvim".owner = "alyu";
 
 	programs.neovim = {
 		enable = true;
