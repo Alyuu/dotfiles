@@ -7,5 +7,6 @@
 		./neovim
         ./zsh
         ./alacritty
+        ./zellij
 	];
 }

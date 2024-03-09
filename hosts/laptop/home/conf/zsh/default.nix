@@ -23,6 +23,5 @@
 
     # Shell plugins
     home.packages = with pkgs; [
-        zellij
     ];
 }
