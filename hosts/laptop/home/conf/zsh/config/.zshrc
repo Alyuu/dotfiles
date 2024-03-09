@@ -7,6 +7,9 @@ HISTFILE=~/.cache/zsh/history
 [ -f "$HOME/.config/zsh/aliases.zsh" ] && source "$HOME/.config/zsh/aliases.zsh"
 [ -f "$HOME/.config/zsh/exports.zsh" ] && source "$HOME/.config/zsh/exports.zsh"
 
+# prompt
+[ -f "$HOME/github/powerlevel10k/powerlevel10k.zsh-theme" ] && source "$HOME/github/powerlevel10k/powerlevel10k.zsh-theme"
+
 # plugins
 
 # keybinds
