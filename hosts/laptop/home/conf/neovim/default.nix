@@ -9,7 +9,7 @@
     home.activation = {
         neovimConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/nvim
-            cp -r ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
+            cp -r --preserve=all ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
         '';
     };
 
