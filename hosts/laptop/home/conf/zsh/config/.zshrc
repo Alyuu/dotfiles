@@ -8,7 +8,7 @@ HISTFILE=~/.cache/zsh/history
 [ -f "$HOME/.config/zsh/exports.zsh" ] && source "$HOME/.config/zsh/exports.zsh"
 
 # prompt
-[ -f "$HOME/github/powerlevel10k/powerlevel10k.zsh-theme" ] && source "$HOME/github/powerlevel10k/powerlevel10k.zsh-theme"
+[ -f "$HOME/.config/zsh/.p10k.zsh" ] && source "$HOME/.config/zsh/.p10k.zsh"
 
 # plugins
 
