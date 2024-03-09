@@ -5,10 +5,10 @@
         zellij
     ];
 
-    home.file."zellij-config" = {
-        source = ./config;
-        target = ".config/zellij";
-    };
+    # home.file."zellij-config" = {
+    #     source = ./config;
+    #     target = ".config/zellij";
+    # };
 
     home.activation = {
         zellijConfig = ''
