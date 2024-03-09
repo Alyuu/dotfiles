@@ -2,9 +2,16 @@
 
 {
     # Set zsh config
-    home.file."zsh-config" = {
-        source = ./config;
-        target = ".config/zsh";
+    # home.file."zsh-config" = {
+    #     source = ./config;
+    #     target = ".config/zsh";
+    # };
+
+    home.activation = {
+        zshConfig = ''
+            mkdir -p ${config.home.homeDirectory}/.config/zsh
+            cp -r ${toString ./config}/* ${config.home.homeDirectory}/.config/zsh
+        '';
     };
 
     # Set zsh config location
