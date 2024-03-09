@@ -7,6 +7,12 @@
         target = ".config/zsh";
     };
 
+    # trying to make the prompt work
+    home.file.".p10k.zsh" = {
+        source = ./config/.p10k.zsh;
+        executable = true;
+    }
+
     # Set zsh config location
     home.file.".zshenv" = {
         text = "ZDOTDIR=$HOME/.config/zsh";
