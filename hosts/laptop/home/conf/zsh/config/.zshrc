@@ -11,12 +11,15 @@ HISTFILE=~/.cache/zsh/history
 # source
 [ -f "$HOME/.config/zsh/aliases.zsh" ] && source "$HOME/.config/zsh/aliases.zsh"
 [ -f "$HOME/.config/zsh/exports.zsh" ] && source "$HOME/.config/zsh/exports.zsh"
+[ -f "$HOME/.config/zsh/functions.zsh" ] && source "$HOME/.config/zsh/functions.zsh"
+
+# Prompt
+[ -f "$HOME/.config/zsh/.p10k.zsh" ] && source "$HOME/.config/zsh/.p10k.zsh"
 
 # plugins
-[ -f "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ] && \
-    source "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
-[ -f "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && \
-    source "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+add_plugin "zsh-powerlevel10k/powerlevel10k.zsh-theme"
+add_plugin "zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+add_plugin "zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # keybinds
 bindkey '^ ' autosuggest-accept
@@ -40,5 +43,3 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 export PATH="$HOME/.local/bin":$PATH
-
-[ -f "$HOME/.config/zsh/.p10k.zsh" ] && source "$HOME/.config/zsh/.p10k.zsh"
