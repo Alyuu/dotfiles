@@ -14,10 +14,6 @@ HISTFILE=~/.cache/zsh/history
 # prompt
 zsh_add_file "$HOME/.config/zsh/.p10k.zsh"
 
-# plugins
-zsh_add_file "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
-zsh_add_file "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
-
 # keybinds
 bindkey '^ ' autosuggest-accept
 
@@ -40,3 +36,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 export PATH="$HOME/.local/bin":$PATH
+
+# plugins
+zsh_add_file "$HOME/.local/share/zsh/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+zsh_add_file "$HOME/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
