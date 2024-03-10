@@ -10,7 +10,8 @@
     home.activation = {
         zshConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/zsh
-            cp -a ${toString ./config}/* ${config.home.homeDirectory}/.config/zsh
+            shopt -s dotglob
+            cp -r --preserve=all ${toString ./config}/* ${config.home.homeDirectory}/.config/zsh
             chmod -R +w ${config.home.homeDirectory}/.config/zsh
         '';
     };
