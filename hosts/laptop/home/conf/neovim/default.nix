@@ -10,6 +10,7 @@
         neovimConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/nvim
             cp -r --preserve=all ${toString ./config}/* ${config.home.homeDirectory}/.config/nvim
+            chmod -R +w ${config.home.homeDirectory}/.config/nvim
         '';
     };
 

@@ -14,6 +14,7 @@
         zellijConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/zellij
             cp -r --preserve=all ${toString ./config}/* ${config.home.homeDirectory}/.config/zellij
+            chmod -R +w ${config.home.homeDirectory}/.config/zellij
         '';
     };
 }

@@ -11,6 +11,7 @@
         zshConfig = ''
             mkdir -p ${config.home.homeDirectory}/.config/zsh
             cp -r --preserve=all ${toString ./config}/* ${config.home.homeDirectory}/.config/zsh
+            chmod -R +w ${config.home.homeDirectory}/.config/zsh
         '';
     };
 
