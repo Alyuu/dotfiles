@@ -32,5 +32,6 @@
 
     # Shell plugins
     home.packages = with pkgs; [
+        eza
     ];
 }
