@@ -33,5 +33,9 @@
     # Shell plugins
     home.packages = with pkgs; [
         eza
+        bat
+        fzf
+        btop
+        tldr
     ];
 }
