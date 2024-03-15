@@ -5,7 +5,7 @@ return {
     config = function()
         require'hop'.setup{}
         local hop = require('hop')
-		vim.keymap.set('n', '<leader><leader>s', hop.hint_anywhere(), { desc = "Hop anywhere" })
-		vim.keymap.set('n', '<leader><leader>l', hop.hint_lines(), { desc = "Hop line" })
+		vim.keymap.set('n', '<leader><leader>s', '<cmd>lua require"hop".hint_char2()<cr>', { desc = "Hop anywhere" })
+		vim.keymap.set('n', '<leader><leader>l', '<cmd>lua require"hop".hint_lines()<cr>', { desc = "Hop line" })
     end
 }
