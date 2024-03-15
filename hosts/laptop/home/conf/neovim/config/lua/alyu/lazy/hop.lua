@@ -3,9 +3,9 @@ return {
     version = "*",
     opts = {},
     config = function()
+        require'hop'.setup{}
         local hop = require('hop')
-        local directions = require('hop.hint').HintDirection
-		vim.keymap.set('n', '<leader><leader>s', hop.hint_anywere(), { desc = "Hop anywhere" })
-		vim.keymap.set('n', '<leader><leader>l', hop.hint_anywere(), { desc = "Hop line" })
+		vim.keymap.set('n', '<leader><leader>s', hop.hint_anywhere(), { desc = "Hop anywhere" })
+		vim.keymap.set('n', '<leader><leader>l', hop.hint_lines(), { desc = "Hop line" })
     end
 }
