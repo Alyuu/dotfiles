@@ -7,6 +7,6 @@
         jq
         poppler
         fd
-        rg
+        ripgrep
     ];
 }
