@@ -24,7 +24,7 @@
 			];
 
 			"$terminal" = "alacritty";
-			"$fileManager" = "dolphin";
+			"$fileManager" = "yazi";
 			"$menu" = "wofi --show drun";
 
 			env = [

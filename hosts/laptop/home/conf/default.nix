@@ -8,5 +8,6 @@
         ./zsh
         ./alacritty
         ./zellij
+        ./yazi
 	];
 }
