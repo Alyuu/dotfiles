@@ -11,20 +11,35 @@
 	};
 
 	home.packages = with pkgs; [
+        # Terminal
 		alacritty
-		floorp
+        zsh
+
+        # App launcher
 		wofi
+
+        # Git
 		git
-		ranger
-		discord
+
+        # File manager
+		yazi
+
+        # Browser
+		floorp
+
+        # Fonts
 		nerdfonts
+
+        # Apps
+		discord
+        spotify
+		obsidian
+
+        # System
 		pamixer
 		gcc
-		obsidian
 		nodejs_21
 		wl-clipboard
-        spotify
-        zsh
         brightnessctl
 	];
 

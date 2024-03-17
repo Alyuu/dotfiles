@@ -37,5 +37,6 @@
         fzf
         btop
         tldr
+        zoxide
     ];
 }
