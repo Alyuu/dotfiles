@@ -43,3 +43,4 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 export PATH="$HOME/.local/bin":$PATH
+eval "$(zoxide init zsh)"
