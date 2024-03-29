@@ -9,5 +9,6 @@
         ./alacritty
         ./zellij
         ./yazi
+        ./vieb
 	];
 }
