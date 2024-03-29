@@ -4,5 +4,6 @@
     home.file."vieb-config" = {
         source = ./config;
         target = ".config/Vieb";
+        recursive = true;
     };
 }
