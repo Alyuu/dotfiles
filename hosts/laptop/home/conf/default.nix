@@ -4,7 +4,7 @@
 		./wezterm
 		./waybar
 		./gtk
-		./neovim
+		# ./neovim
         ./zsh
         ./alacritty
         ./zellij

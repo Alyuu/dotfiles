@@ -10,6 +10,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    alyuu-nixvim.url = "github:Alyuu/nixvim";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

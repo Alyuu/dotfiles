@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, system, ... }:
 
 {
 	imports = [
@@ -9,6 +9,8 @@
 		username = "alyu";
 		homeDirectory = "/home/alyu";
 	};
+
+    home.packages = [ inputs.nixvim-flake.packages.${system}.default ];
 
 	home.packages = with pkgs; [
         # Terminal

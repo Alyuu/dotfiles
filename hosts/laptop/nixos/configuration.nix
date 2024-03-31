@@ -102,11 +102,6 @@
 	package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
-  programs.neovim = {
-	enable = true;
-	defaultEditor = true;
-  };
-
   programs.ssh.startAgent = true;
 
   nix.gc = {
