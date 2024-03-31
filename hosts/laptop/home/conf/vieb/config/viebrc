@@ -13,6 +13,7 @@ set containernewtab=s:usecurrent
 set containershowname=automatic
 set containersplitpage=s:usecurrent
 set containerstartuppage=main
+set containercolors={"^personal$": "#8ec07c", "^work$": "#83a598", "^school$": "#fb4934"}
 set countlimit=100
 set nodarkreader
 set darkreaderbg=#181a1b
