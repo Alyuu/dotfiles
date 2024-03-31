@@ -35,7 +35,7 @@
 					home-manager.useGlobalPkgs = true;
 					home-manager.useUserPackages = true;
 					home-manager.users.alyu = import ./hosts/laptop/home/home.nix ;
-					home-manager.extraSpecialArgs = { inherit inputs outputs; };
+					home-manager.extraSpecialArgs = { inherit inputs outputs system; };
 				}
 			];
 		};
