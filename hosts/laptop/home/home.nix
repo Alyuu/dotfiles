@@ -43,7 +43,7 @@
 		wl-clipboard
         brightnessctl
 
-        inputs.nixvim-flake.packages.${system}.default
+        inputs.alyuu-nixvim.packages.${system}.default
 	];
 
 	programs.git = {
