@@ -10,8 +10,6 @@
 		homeDirectory = "/home/alyu";
 	};
 
-    home.packages = [ inputs.nixvim-flake.packages.${system}.default ];
-
 	home.packages = with pkgs; [
         # Terminal
 		alacritty
@@ -44,6 +42,8 @@
 		nodejs_21
 		wl-clipboard
         brightnessctl
+
+        inputs.nixvim-flake.packages.${system}.default
 	];
 
 	programs.git = {
