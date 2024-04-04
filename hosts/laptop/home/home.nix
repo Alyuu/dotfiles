@@ -35,6 +35,7 @@
 		discord
         spotify
 		obsidian
+        teams-for-linux
 
         # System
 		pamixer
