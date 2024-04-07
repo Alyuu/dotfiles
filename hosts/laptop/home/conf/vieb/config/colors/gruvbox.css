@@ -11,7 +11,7 @@
     --tab-muted-playing: #ff3;
     --tab-crashed: #f00;
     --tab-unresponsive: var(--tab-crashed);
-    --tab-scrollbar: #5ff;
+    --tab-scrollbar: #8ec07c;
     --container-background: none;
     --mode-normal-fg: #8ec07c;
     --mode-normal-bg: none;
@@ -134,6 +134,11 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
 /* Layout */
 #app {
     width: 100vw;
@@ -159,6 +164,8 @@
     flex-direction: column;
 
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #page-container {
@@ -181,6 +188,7 @@
     gap: 10px;
 
     height: auto;
+    min-height: 35px;
 
     padding: 5px 10px;
 }
@@ -188,5 +196,6 @@
 .visible-tab {
     border-left: 5px solid;
 }
+
 
 
