@@ -32,7 +32,7 @@
 		nerdfonts
 
         # Apps
-		discord
+		webcord
         spotify
 		obsidian
         teams-for-linux
