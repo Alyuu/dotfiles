@@ -6,7 +6,7 @@
 
         settings = {
             main = {
-                term = "xterm-256color";
+                shell = "zsh";
 
                 font = "JetBrainsMonoNerdFont:size=12";
             };
