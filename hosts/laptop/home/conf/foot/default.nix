@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-    programs = {
+    programs.foot = {
         enable = true;
 
         settings = {
@@ -12,5 +12,5 @@
                 dpi-aware = "yes";
             };
         };
-    }
+    };
 }
