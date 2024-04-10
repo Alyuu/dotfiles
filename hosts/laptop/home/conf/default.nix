@@ -5,9 +5,10 @@
 		./gtk
 		# ./neovim
         ./zsh
-        ./alacritty
+        # ./alacritty
         ./zellij
         ./yazi
         ./vieb
+        ./foot
 	];
 }
