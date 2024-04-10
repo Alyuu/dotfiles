@@ -12,7 +12,7 @@
 
 	home.packages = with pkgs; [
         # Terminal
-		alacritty
+        foot
         zsh
 
         # App launcher

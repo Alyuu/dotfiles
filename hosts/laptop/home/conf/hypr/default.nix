@@ -23,7 +23,7 @@
 				"waybar"
 			];
 
-			"$terminal" = "alacritty";
+			"$terminal" = "foot";
 			"$fileManager" = "yazi";
 			"$menu" = "wofi --show drun";
 
