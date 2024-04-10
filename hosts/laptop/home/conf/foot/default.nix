@@ -8,7 +8,7 @@
             main = {
                 term = "xterm-256color";
 
-                font = "JetBrainsMono:size=12";
+                font = "JetBrainsMonoNerdFont:size=12";
             };
         };
     };
