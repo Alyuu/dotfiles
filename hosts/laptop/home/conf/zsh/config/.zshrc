@@ -22,7 +22,7 @@ add_plugin "zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
 add_plugin "zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # keybinds
-bindkey '^y' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 
 # Basic auto/tab complete:
 autoload -U compinit

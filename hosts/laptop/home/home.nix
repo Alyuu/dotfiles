@@ -64,7 +64,8 @@
 	# };
 
 	home.sessionVariables = {
-		# EDITOR = "emacs";
+        SHELL = "zsh";
+        TERM = "foot";
 	};
 
 	programs.home-manager.enable = true;

@@ -82,10 +82,6 @@
     isNormalUser = true;
     description = "Alyu";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
   };
 
   # Allow unfree packages
@@ -94,7 +90,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  	wget
   ];
 
   programs.hyprland = {
