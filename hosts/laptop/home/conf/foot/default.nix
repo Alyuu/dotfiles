@@ -9,7 +9,6 @@
                 term = "xterm-256color";
 
                 font = "JetBrainsMono:size=12";
-                dpi-aware = "yes";
             };
         };
     };
