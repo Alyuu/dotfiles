@@ -9,6 +9,7 @@
                 shell = "zsh";
 
                 font = "JetBrainsMonoNerdFont:size=12";
+                pad = "10x10";
             };
         };
     };
