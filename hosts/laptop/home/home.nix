@@ -34,7 +34,6 @@
         # Apps
 		webcord
         spotify
-		obsidian
         teams-for-linux
 
         # System
