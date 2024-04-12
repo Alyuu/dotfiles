@@ -1,10 +1,7 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-    ];
+  imports = [ ./hardware-configuration.nix ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -40,22 +37,20 @@
     LC_TIME = "es_ES.UTF-8";
   };
 
-  services.xserver = {
-	enable = true;
-  	displayManager = {
-		gdm.enable = true;
-		defaultSession = "hyprland";
-	};
-	desktopManager = {
-		#gnome.enable = true;
-	};
-	# Configure keymap in X11
-	xkb.layout = "us";
-	xkb.variant = "altgr-intl";
+  services = {
+    printing.enable = true;
+    displayManager.defaultSession = "hyprland";
+    xserver = {
+      enable = true;
+      displayManager = { gdm.enable = true; };
+      desktopManager = {
+        #gnome.enable = true;
+      };
+      # Configure keymap in X11
+      xkb.layout = "us";
+      xkb.variant = "altgr-intl";
+    };
   };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -85,26 +80,23 @@
   };
 
   # Allow unfree packages
-  nixpkgs = {
-    config.allowUnfree = true;
-  };
+  nixpkgs = { config.allowUnfree = true; };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  ];
+  environment.systemPackages = with pkgs; [ ];
 
   programs.hyprland = {
-  	enable = true;
-	package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+    enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
   programs.ssh.startAgent = true;
 
   nix.gc = {
-	automatic = true;
-	dates = "weekly";
-	options = "--delete-older-than 7d";
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
