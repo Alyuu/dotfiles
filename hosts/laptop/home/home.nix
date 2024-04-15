@@ -27,6 +27,7 @@
         # Browser
 		floorp
         vieb
+        vivaldi
 
         # Fonts
 		nerdfonts
