@@ -10,5 +10,6 @@
         ./yazi
         ./vieb
         ./foot
+        ./direnv
 	];
 }

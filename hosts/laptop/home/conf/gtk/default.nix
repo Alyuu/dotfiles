@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-	gtk = {
+	programs.gtk = {
 		enable = true;
 		#iconTheme = {
 		#	name = "Yaru-magenta-dark";
