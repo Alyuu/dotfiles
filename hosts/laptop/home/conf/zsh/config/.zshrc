@@ -21,9 +21,6 @@ add_plugin "zsh-powerlevel10k/powerlevel10k.zsh-theme"
 add_plugin "zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
 add_plugin "zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-# keybinds
-bindkey '^ ' autosuggest-accept
-
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -44,3 +41,4 @@ bindkey -v '^?' backward-delete-char
 
 export PATH="$HOME/.local/bin":$PATH
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
