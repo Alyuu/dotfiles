@@ -35,7 +35,6 @@
         # Apps
 		webcord
         spotify
-        teams-for-linux
 
         # System
 		pamixer
