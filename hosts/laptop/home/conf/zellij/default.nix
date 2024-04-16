@@ -9,6 +9,7 @@
             default_layout = "compact";
 
             enableZshIntegration = true;
+            default_shell = "zsh";
 
             theme = "gruvbox-dark";
 
