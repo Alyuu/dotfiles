@@ -8,6 +8,8 @@
             pane_frames = false;
             default_layout = "compact";
 
+            enableZshIntegration = true;
+
             theme = "gruvbox-dark";
 
             themes = {
