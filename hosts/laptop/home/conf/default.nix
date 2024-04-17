@@ -11,5 +11,6 @@
         ./vieb
         ./foot
         ./direnv
+        ./dev
 	];
 }
