@@ -15,6 +15,11 @@
         foot
         zsh
 
+        # Containers
+        dive
+        podman-tui
+        podman-compose
+
         # App launcher
 		wofi
 

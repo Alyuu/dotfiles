@@ -76,7 +76,7 @@
   users.users.alyu = {
     isNormalUser = true;
     description = "Alyu";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "podman" ];
   };
 
   # Allow unfree packages
@@ -97,6 +97,12 @@
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 7d";
+  };
+
+  virtualisation.podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
