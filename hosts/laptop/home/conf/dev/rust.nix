@@ -4,6 +4,7 @@
     home = {
         packages = with pkgs; [
             cargo
+            cargo-watch
             rustc
             rustfmt
             sqlx-cli
