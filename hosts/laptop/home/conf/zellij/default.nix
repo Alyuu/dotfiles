@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+    home.file."zellij-plugins" = {
+        source = ./plugins;
+        target = ".config/zellij/plugins";
+    };
+
     programs.zellij = {
         enable = true;
 
