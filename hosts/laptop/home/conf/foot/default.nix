@@ -8,7 +8,7 @@
             main = {
                 shell = "zsh";
 
-                font = "FantasqueSansMNerdFontMono:size=14";
+                font = "FantasqueSansMNerdFontMono:size=13";
                 pad = "30x10";
             };
             colors = {
