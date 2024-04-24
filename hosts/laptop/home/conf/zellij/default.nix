@@ -33,6 +33,10 @@
                     orange = [214 93 14];
                 };
             };
+
+            shared_except."locked" = {
+
+            };
         };
     };
 }
