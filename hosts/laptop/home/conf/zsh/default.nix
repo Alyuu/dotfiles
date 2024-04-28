@@ -77,6 +77,23 @@
             
             settings = {
                 add_newline = false;
+
+                palettes.gruvbox = {
+                    color_fg = "#EBDBB2";
+                    color_bg = "#282828";
+                    color_aqua = "#8EC07C";
+                    color_red = "#FB4934";
+                    color_green = "#B8BB26";
+                    color_yellow = "#FABD2F";
+                    color_blue = "#83A598";
+                };
+                
+                character = {
+                    success_symbol = "[λ](bold fg:color_aqua)";
+                    error_symbol = "[λ](bold fg:color_red)";
+                    vimcmd_symbol = "[](bold fg:color_aqua)";
+                    vimcmd_visual_symbol = "[](bold fg:color_yellow)";
+                };
             };
         };
 
