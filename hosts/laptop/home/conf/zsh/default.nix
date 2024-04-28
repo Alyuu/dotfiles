@@ -79,10 +79,10 @@
                 add_newline = false;
 
                 format = lib.concatStrings [
+                    "$os"
                     "$username"
                     "$directory"
                     "$line_break"
-                    "$os"
                     "$character"
                 ];
 
@@ -129,7 +129,7 @@
                 
                 username = {
                     show_always = true;
-                    style_user = "fg:color_fg";
+                    style_user = "fg:color_yellow";
                     style_root = "fg:color_red";
                     format = "[$user ]($style)";
                 };
