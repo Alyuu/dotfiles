@@ -99,6 +99,7 @@
                     color_fg = "#EBDBB2";
                     color_bg = "#282828";
                     color_bg3 = "#665c54";
+                    color_bg4 = "#7C6F64";
                     color_aqua = "#8EC07C";
                     color_aqua_dark = "#689D6A";
                     color_red = "#FB4934";
@@ -120,44 +121,44 @@
                 os = {
                     disabled = false;
                     symbols.NixOS = " ";
-                    style = "fg:color_bg bg:color_green_dark";
+                    style = "bold fg:color_bg bg:color_green_dark";
                     format = "[$symbol]($style)";
                 };
 
                 username = {
                     show_always = true;
-                    style_user = "fg:color_bg bg:color_green_dark";
+                    style_user = "bold fg:color_bg bg:color_green_dark";
                     style_root = "fg:color_red";
                     format = "[$user ]($style)";
                 };
 
                 directory = {
-                    style = "fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_aqua_dark";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
                 };
                 
                 cmd_duration = {
-                    style = "fg:color_bg bg:color_bg3";
+                    style = "bold fg:color_bg bg:color_bg4";
                     format = "[󰔟 $duration]($style)";
                 };
 
                 git_branch = {
                     symbol = "";
-                    style = "fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_aqua_dark";
                     format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
-                    style = "fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_aqua_dark";
                     format = "[$all_status$ahead_behind]($style)";
                 };
 
                 time = {
                     disabled = false;
                     time_format = "%R";
-                    style = "fg:color_bg bg:color_green_dark";
+                    style = "bold fg:color_bg bg:color_green_dark";
                     format = "[ $time ]($style)";
                 };
             };
