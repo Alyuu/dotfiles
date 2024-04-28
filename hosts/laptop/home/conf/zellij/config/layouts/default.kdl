@@ -5,9 +5,9 @@ layout {
 
     pane size=1 borderless=true {
         plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-            format_left  "{mode}#[fg=#8EC07C,bg=#282828,bold] {session}#[bg=#282828] {tabs}"
-            format_right "{datetime}"
-            format_space "#[bg=#282828]"
+            format_left  "{mode}#[fg=#8EC07C,bg=#665C54,bold] {session}#[bg=#665C54] {tabs}#[bg=#3C3836]"
+            format_right "{datetime}#[bg=#665C54]"
+            format_space "#[bg=#3C3836]"
 
             mode_normal        "#[fg=#282828,bg=#8ec07c,bold] {name} "
             mode_locked        "#[fg=#282828,bg=#fb4934,bold] {name} "
