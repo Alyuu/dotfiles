@@ -144,6 +144,13 @@
                     style = "fg:color_green";
                     format = "[$all_status$ahead_behind]($style)";
                 };
+
+                time = {
+                    disabled = false;
+                    time_format = "%R";
+                    style = "fg:color_yellow";
+                    format = "[$time]($style)";
+                };
             };
         };
 
