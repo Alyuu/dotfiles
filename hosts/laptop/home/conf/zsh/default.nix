@@ -78,6 +78,8 @@
             settings = {
                 add_newline = false;
 
+                palette = "gruvbox";
+
                 palettes.gruvbox = {
                     color_fg = "#EBDBB2";
                     color_bg = "#282828";
