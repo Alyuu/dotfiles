@@ -121,19 +121,19 @@
                 os = {
                     disabled = false;
                     symbols.NixOS = "";
-                    style = "bold fg:color_bg bg:color_green_dark";
+                    style = "bold fg:color_bg bg:color_aqua_dark";
                     format = "[ $symbol ]($style)";
                 };
 
                 username = {
                     show_always = true;
-                    style_user = "bold fg:color_bg bg:color_green_dark";
+                    style_user = "bold fg:color_bg bg:color_aqua_dark";
                     style_root = "fg:color_red";
                     format = "[$user ]($style)";
                 };
 
                 directory = {
-                    style = "bold fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
@@ -146,19 +146,19 @@
 
                 git_branch = {
                     symbol = "";
-                    style = "bold fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
-                    style = "bold fg:color_bg bg:color_aqua_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[$all_status$ahead_behind ]($style)";
                 };
 
                 time = {
                     disabled = false;
                     time_format = "%R";
-                    style = "bold fg:color_bg bg:color_green_dark";
+                    style = "bold fg:color_bg bg:color_aqua_dark";
                     format = "[ $time ]($style)";
                 };
             };
