@@ -4,9 +4,7 @@ layout {
     }
 
     pane size=1 borderless=true {
-        plugin location="file:target/wasm32-wasi/debug/zjstatus.wasm" {
-            hide_frame_for_single_pane "true"
-
+        plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
             format_left  "{mode}#[fg=#89B4FA,bg=#181825,bold] {session}#[bg=#181825] {tabs}"
             format_right "{command_kubectx}#[fg=#424554,bg=#181825]::{command_kubens}{datetime}"
             format_space "#[bg=#181825]"

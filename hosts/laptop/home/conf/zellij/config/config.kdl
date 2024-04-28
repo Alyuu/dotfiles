@@ -159,7 +159,7 @@ keybinds {
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Ctrl y" {
-            LaunchOrFocusPlugin "file:~/zellij/plugins/zellij_forgot.wasm" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
                 "lock"                  "ctrl + g"
                 "unlock"                "ctrl + g"
                 "new pane"              "ctrl + p + n"
@@ -274,7 +274,7 @@ plugins {
 //   - true (default)
 //   - false
 //
-// pane_frames true
+pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
