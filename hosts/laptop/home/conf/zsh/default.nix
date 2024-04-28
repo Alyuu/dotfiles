@@ -100,6 +100,7 @@
                     color_bg = "#282828";
                     color_bg3 = "#665c54";
                     color_bg4 = "#7C6F64";
+                    color_gray = "#928374";
                     color_aqua = "#8EC07C";
                     color_aqua_dark = "#689D6A";
                     color_red = "#FB4934";
@@ -141,7 +142,7 @@
                 };
                 
                 cmd_duration = {
-                    style = "bold fg:color_bg bg:color_bg3";
+                    style = "bold fg:color_bg bg:color_gray";
                     format = "[ 󰔟 $duration ]($style)";
                 };
 
