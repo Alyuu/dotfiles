@@ -86,7 +86,7 @@
                     "$character"
                 ];
 
-                right_format = [
+                right_format = lib.concatStrings [
                     "$git_branch"
                     "$git_status"
                     "$time"
