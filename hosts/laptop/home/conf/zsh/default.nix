@@ -107,6 +107,7 @@
                     color_green_dark = "#98971A";
                     color_yellow = "#FABD2F";
                     color_blue = "#83A598";
+                    color_blue_dark = "#458588";
                 };
                 
                 character = {
@@ -133,7 +134,7 @@
                 };
 
                 directory = {
-                    style = "bold fg:color_bg bg:color_blue";
+                    style = "bold fg:color_bg bg:color_blue_dark";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
@@ -146,12 +147,12 @@
 
                 git_branch = {
                     symbol = "";
-                    style = "bold fg:color_bg bg:color_blue";
+                    style = "bold fg:color_bg bg:color_blue_dark";
                     format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
-                    style = "bold fg:color_bg bg:color_blue";
+                    style = "bold fg:color_bg bg:color_blue_dark";
                     format = "[$all_status$ahead_behind ]($style)";
                 };
 
