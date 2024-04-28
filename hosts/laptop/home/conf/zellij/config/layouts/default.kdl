@@ -21,14 +21,6 @@ layout {
             tab_sync_indicator       "  "
             tab_floating_indicator   "󰉈 "
 
-            command_kubectx_command  "kubectx -c"
-            command_kubectx_format   "#[fg=#6C7086,bg=#181825,italic] {stdout}"
-            command_kubectx_interval "2"
-
-            command_kubens_command  "kubens -c"
-            command_kubens_format   "#[fg=#6C7086,bg=#181825]{stdout} "
-            command_kubens_interval "2"
-
             datetime          "#[fg=#9399B2,bg=#181825] {format} "
             datetime_format   "%A, %d %b %Y %H:%M"
             datetime_timezone "Europe/Berlin"
