@@ -306,26 +306,26 @@ pane_frames false
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
-// themes {
-//     dracula {
-//         fg 248 248 242
-//         bg 40 42 54
-//         red 255 85 85
-//         green 80 250 123
-//         yellow 241 250 140
-//         blue 98 114 164
-//         magenta 255 121 198
-//         orange 255 184 108
-//         cyan 139 233 253
-//         black 0 0 0
-//         white 255 255 255
-//     }
-// }
+themes {
+    gruvbox-dark {
+        fg "#EBDBB2"
+        bg "#282828"
+        black "#3C3836"
+        red "#FB4934"
+        green "#B8BB26"
+        yellow "#FABD2F"
+        blue "#83A598"
+        magenta "#B16286"
+        cyan "#8EC07C"
+        white "#FBF1C7"
+        orange "#FE8019"
+    }
+}
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-// theme "default"
+theme "gruvbox-dark"
 
 // The name of the default layout to load on startup
 // Default: "default"
