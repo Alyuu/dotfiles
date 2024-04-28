@@ -5,8 +5,8 @@ layout {
 
     pane size=1 borderless=true {
         plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-            format_left  "{mode}#[fg=#8EC07C,bg=#665C54,bold] {session}#[bg=#665C54] {tabs}#[bg=#3C3836]"
-            format_right "{datetime}#[bg=#665C54]"
+            format_left  "{mode}#[fg=#8EC07C,bg=#665C54,bold] {session}#[bg=#665C54] {tabs}"
+            format_right "{datetime}"
             format_space "#[bg=#3C3836]"
 
             mode_normal        "#[fg=#282828,bg=#8ec07c,bold] {name} "
@@ -18,13 +18,13 @@ layout {
             mode_session       "#[fg=#282828,bg=#fe8019,bold] {name} "
             mode_move          "#[fg=#282828,bg=#a89984,bold] {name} "
 
-            tab_normal               "#[fg=#689D6A,bg=#282828] {index} {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
-            tab_active               "#[fg=#8EC07C,bg=#282828,bold,italic] {index} {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+            tab_normal               "#[fg=#689D6A,bg=#3C3836] {index} {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+            tab_active               "#[fg=#8EC07C,bg=#3C3836,bold,italic] {index} {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
             tab_fullscreen_indicator "□ "
             tab_sync_indicator       "  "
             tab_floating_indicator   "󰉈 "
 
-            datetime          "#[fg=#8EC07C,bg=#282828] {format} "
+            datetime          "#[fg=#8EC07C,bg=#665C54] {format} "
             datetime_format   "%A, %d %b %Y %H:%M"
             datetime_timezone "Europe/Berlin"
         }
