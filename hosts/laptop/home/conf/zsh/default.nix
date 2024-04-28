@@ -134,25 +134,25 @@
                 };
 
                 directory = {
-                    style = "bold fg:color_bg bg:color_blue_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
                 };
                 
                 cmd_duration = {
-                    style = "bold fg:color_bg bg:color_bg4";
+                    style = "bold fg:color_bg bg:color_bg3";
                     format = "[ 󰔟 $duration ]($style)";
                 };
 
                 git_branch = {
                     symbol = "";
-                    style = "bold fg:color_bg bg:color_blue_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
-                    style = "bold fg:color_bg bg:color_blue_dark";
+                    style = "bold fg:color_bg bg:color_blue";
                     format = "[$all_status$ahead_behind ]($style)";
                 };
 
