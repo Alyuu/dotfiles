@@ -79,9 +79,8 @@
                 add_newline = false;
 
                 format = lib.concatStrings [
-                    "$os"
-                    "$username"
                     "$directory"
+                    "$cmd_duration"
                     "$line_break"
                     "$character"
                 ];
@@ -100,6 +99,7 @@
                     color_aqua = "#8EC07C";
                     color_red = "#FB4934";
                     color_green = "#B8BB26";
+                    color_green_dark = "#98971A";
                     color_yellow = "#FABD2F";
                     color_blue = "#83A598";
                 };
@@ -113,6 +113,11 @@
 
                 line_break.disabled = false;
 
+                cmd_duration = {
+                    style = "fg:color_blue";
+                    format = "[󰔟 $duration]($style)";
+                };
+
                 os = {
                     disabled = false;
                     symbols.NixOS = " ";
@@ -121,7 +126,7 @@
                 };
 
                 directory = {
-                    style = "fg:color_aqua";
+                    style = "fg:color_green_dark";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
