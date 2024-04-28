@@ -122,7 +122,7 @@
 
                 directory = {
                     style = "fg:color_aqua";
-                    format = "[$path]($style)";
+                    format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
                 };
@@ -131,13 +131,13 @@
                     show_always = true;
                     style_user = "fg:color_fg";
                     style_root = "fg:color_red";
-                    format = "[$user]($style)";
+                    format = "[$user ]($style)";
                 };
 
                 git_branch = {
                     symbol = "";
                     style = "fg:color_green";
-                    format = "[$symbol $branch]($style)";
+                    format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
@@ -149,7 +149,7 @@
                     disabled = false;
                     time_format = "%R";
                     style = "fg:color_yellow";
-                    format = "[$time]($style)";
+                    format = "[ $time ]($style)";
                 };
             };
         };
