@@ -83,14 +83,12 @@
                     "$username"
                     "$directory"
                     "$cmd_duration"
-                    "$line_break"
-                    "$character"
-                ];
-
-                right_format = lib.concatStrings [
+                    "$fill"
                     "$git_branch"
                     "$git_status"
                     "$time"
+                    "$line_break"
+                    "$character"
                 ];
 
                 palette = "gruvbox";
@@ -136,32 +134,32 @@
                 };
 
                 directory = {
-                    style = "bold fg:color_fg bg:color_bg3";
+                    style = "fg:color_fg bg:color_bg3";
                     format = "[ $path ]($style)";
                     truncation_length = 3;
                     truncation_symbol = ".../";
                 };
                 
                 cmd_duration = {
-                    style = "bold fg:color_fg bg:color_bg1";
+                    style = "fg:color_fg bg:color_bg1";
                     format = "[ 󰔟 $duration ]($style)";
                 };
 
                 git_branch = {
                     symbol = "";
-                    style = "bold fg:color_fg bg:color_bg1";
+                    style = "fg:color_fg bg:color_bg1";
                     format = "[ $symbol $branch ]($style)";
                 };
 
                 git_status = {
-                    style = "bold fg:color_fg bg:color_bg1";
+                    style = "fg:color_fg bg:color_bg1";
                     format = "[$all_status$ahead_behind ]($style)";
                 };
 
                 time = {
                     disabled = false;
                     time_format = "%R";
-                    style = "bold fg:color_fg bg:color_bg3";
+                    style = "fg:color_fg bg:color_bg3";
                     format = "[ $time ]($style)";
                 };
             };
