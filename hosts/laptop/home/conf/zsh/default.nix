@@ -120,9 +120,9 @@
 
                 os = {
                     disabled = false;
-                    symbols.NixOS = " ";
+                    symbols.NixOS = "";
                     style = "bold fg:color_bg bg:color_green_dark";
-                    format = "[$symbol]($style)";
+                    format = "[ $symbol ]($style)";
                 };
 
                 username = {
@@ -141,7 +141,7 @@
                 
                 cmd_duration = {
                     style = "bold fg:color_bg bg:color_bg4";
-                    format = "[󰔟 $duration]($style)";
+                    format = "[ 󰔟 $duration ]($style)";
                 };
 
                 git_branch = {
@@ -152,7 +152,7 @@
 
                 git_status = {
                     style = "bold fg:color_bg bg:color_aqua_dark";
-                    format = "[$all_status$ahead_behind]($style)";
+                    format = "[$all_status$ahead_behind ]($style)";
                 };
 
                 time = {
