@@ -158,7 +158,7 @@ keybinds {
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Ctrl y" {
+        bind "Ctrl ?" {
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
                 "lock"                  "ctrl + g"
                 "unlock"                "ctrl + g"
