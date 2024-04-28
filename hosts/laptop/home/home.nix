@@ -43,7 +43,7 @@
         # System
 		pamixer
 		gcc
-		nodejs_21
+		nodejs
 		wl-clipboard
         brightnessctl
 
