@@ -78,6 +78,20 @@
             settings = {
                 add_newline = false;
 
+                format = lib.concatStrings [
+                    "$username"
+                    "$directory"
+                    "$line_break"
+                    "$os"
+                    "$character"
+                ];
+
+                right_format = [
+                    "$git_branch"
+                    "$git_status"
+                    "$time"
+                ];
+
                 palette = "gruvbox";
 
                 palettes.gruvbox = {
@@ -95,6 +109,40 @@
                     error_symbol = "[λ](bold fg:color_red)";
                     vimcmd_symbol = "[](bold fg:color_aqua)";
                     vimcmd_visual_symbol = "[](bold fg:color_yellow)";
+                };
+
+                line_break.disabled = false;
+
+                os = {
+                    disabled = false;
+                    symbols.NixOS = " ";
+                    style = "fg:color_blue";
+                    format = "[$symbol]($style)";
+                };
+
+                directory = {
+                    style = "fg:color_aqua";
+                    format = "[$path]($style)";
+                    truncation_length = 3;
+                    truncation_symbol = ".../";
+                };
+                
+                username = {
+                    show_always = true;
+                    style_user = "fg:color_fg";
+                    style_root = "fg:color_red";
+                    format = "[$user]($style)";
+                };
+
+                git_branch = {
+                    symbol = "";
+                    style = "fg:color_green";
+                    format = "[$symbol $branch]($style)";
+                };
+
+                git_status = {
+                    style = "fg:color_green";
+                    format = "[$all_status$ahead_behind]($style)";
                 };
             };
         };
