@@ -19,6 +19,9 @@
         dive
         podman-tui
         podman-compose
+        docker
+        docker-client
+        docker-compose
 
         # App launcher
 		wofi
