@@ -99,10 +99,8 @@
     options = "--delete-older-than 7d";
   };
 
-  virtualisation.podman = {
+  virtualisation.docker = {
       enable = true;
-      dockerCompat = true;
-      defaultNetwork.settings.dns_enabled = true;
   };
 
   # Some programs need SUID wrappers, can be configured further or are
