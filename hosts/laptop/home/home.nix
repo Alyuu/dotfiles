@@ -16,9 +16,7 @@
         zsh
 
         # Containers
-        dive
         docker
-        docker-client
         docker-compose
 
         # App launcher
