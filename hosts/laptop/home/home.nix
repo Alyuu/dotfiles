@@ -45,6 +45,7 @@
 		nodejs
 		wl-clipboard
         brightnessctl
+        sshpass
 
         inputs.alyuu-nixvim.packages.${system}.default
 	];

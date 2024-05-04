@@ -76,7 +76,7 @@
   users.users.alyu = {
     isNormalUser = true;
     description = "Alyu";
-    extraGroups = [ "networkmanager" "wheel" "podman" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
 
   # Allow unfree packages
@@ -101,6 +101,10 @@
 
   virtualisation.docker = {
       enable = true;
+      rootless = {
+          enable = true;
+          setSocketVariable = true;
+      };
   };
 
   # Some programs need SUID wrappers, can be configured further or are
