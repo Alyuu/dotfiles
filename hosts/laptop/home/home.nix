@@ -17,7 +17,6 @@
 
         # Containers
         docker
-        docker-compose
 
         # App launcher
 		wofi
