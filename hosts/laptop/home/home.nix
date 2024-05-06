@@ -35,7 +35,7 @@
 		nerdfonts
 
         # Apps
-		webcord
+		discord
         spotify
 
         # System
