@@ -25,11 +25,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1715038227,
-        "narHash": "sha256-BNKAbaZ6xnNQSJHdZzcIB/oPuHJBKL37UZ2bmmoHXI8=",
+        "lastModified": 1715051058,
+        "narHash": "sha256-8K31Wbm5kaHoEhYBcWZVq8nXDoNP21vjrCYAKAMq+z0=",
         "owner": "Alyuu",
         "repo": "nixvim",
-        "rev": "32189153a77ec79cba063d1380e5e6775e58f1ec",
+        "rev": "6be989ad6a868724bb11ed705714dc0596442aa1",
         "type": "github"
       },
       "original": {
