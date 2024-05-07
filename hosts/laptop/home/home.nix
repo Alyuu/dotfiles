@@ -36,6 +36,7 @@
 
         # Apps
 		discord
+        vesktop
         spotify
 
         # System
@@ -45,6 +46,7 @@
 		wl-clipboard
         brightnessctl
         sshpass
+        dunst
 
         inputs.alyuu-nixvim.packages.${system}.default
 	];
