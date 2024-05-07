@@ -35,8 +35,8 @@
 		nerdfonts
 
         # Apps
-		discord
         vesktop
+        arrpc
         spotify
 
         # System

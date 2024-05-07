@@ -107,12 +107,6 @@
       };
   };
 
-  nixpkgs.config.packageOverrides = pkgs: {
-    discord = pkgs.discord.override {
-      withOpenASAR = true;
-    };
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
