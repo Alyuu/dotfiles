@@ -36,7 +36,6 @@
 
         # Apps
         vesktop
-        arrpc
         spotify
 
         # System
