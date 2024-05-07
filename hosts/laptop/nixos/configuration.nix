@@ -107,7 +107,7 @@
       };
   };
 
-  config.packageOverrides = pkgs: {
+  nixpkgs.config.packageOverrides = pkgs: {
     discord = pkgs.discord.override {
       withOpenASAR = true;
     };
