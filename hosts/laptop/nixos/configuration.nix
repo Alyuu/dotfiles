@@ -107,7 +107,7 @@
       };
   };
 
-  packageOverrides = pkgs: {
+  config.packageOverrides = pkgs: {
     discord = pkgs.discord.override {
       withOpenASAR = true;
     };
