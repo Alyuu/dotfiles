@@ -116,6 +116,7 @@
 				"$mainMod, R, exec, $menu"
 				"$mainMod, P, pseudo,"
 				"$mainMod, J, togglesplit,"
+                "$mainMod SHIFT, S, exec, grim -g '$(slurp -d)' - | wl-copy"
 				# Move focus with mainMod + arrow keys
 				"$mainMod, left, movefocus, l"
 				"$mainMod, right, movefocus, r"
@@ -158,7 +159,6 @@
 				",XF86AudioRaiseVolume,exec,pamixer -i 10"
 				",XF86AudioPlay,exec,playerctl play-pause"
 				",XF86AudioPause,exec,playerctl play-pause"
-                "$mainMod SHIFT S, exec, grim -g '$(slurp -d)' - | wl-copy"
 			];
 
 			bindm = [
