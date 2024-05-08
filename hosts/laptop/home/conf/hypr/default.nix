@@ -144,8 +144,8 @@
 				"$mainMod SHIFT, 9, movetoworkspace, 9"
 				"$mainMod SHIFT, 0, movetoworkspace, 10"
 				# Example special workspace (scratchpad)
-				"$mainMod, S, togglespecialworkspace, magic"
-				"$mainMod SHIFT, S, movetoworkspace, special:magic"
+				"$mainMod, M, togglespecialworkspace, magic"
+				"$mainMod SHIFT, M, movetoworkspace, special:magic"
 				# Scroll through existing workspaces with mainMod + scroll
 				"$mainMod, mouse_down, workspace, e+1"
 				"$mainMod, mouse_up, workspace, e-1"
@@ -158,6 +158,7 @@
 				",XF86AudioRaiseVolume,exec,pamixer -i 10"
 				",XF86AudioPlay,exec,playerctl play-pause"
 				",XF86AudioPause,exec,playerctl play-pause"
+                "$mainMod SHIFT S, exec, grim -g '$(slurp -d)' - | wl-copy"
 			];
 
 			bindm = [
