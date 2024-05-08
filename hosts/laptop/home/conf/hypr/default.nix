@@ -116,7 +116,7 @@
 				"$mainMod, R, exec, $menu"
 				"$mainMod, P, pseudo,"
 				"$mainMod, J, togglesplit,"
-                "$mainMod SHIFT, S, exec, grim -g '$(slurp -d)' - | wl-copy"
+                "$mainMod SHIFT, S, exec, grim -g \"$(slurp -d)\" - | wl-copy"
 				# Move focus with mainMod + arrow keys
 				"$mainMod, left, movefocus, l"
 				"$mainMod, right, movefocus, r"
