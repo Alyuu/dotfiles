@@ -46,6 +46,8 @@
         brightnessctl
         sshpass
         dunst
+        grim
+        slurp
 
         inputs.alyuu-nixvim.packages.${system}.default
 	];
