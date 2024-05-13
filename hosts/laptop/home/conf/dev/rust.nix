@@ -19,7 +19,7 @@
 
     programs.zsh.sessionVariables = {
         RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
-        RUST_BACTRACE = 1;
+        RUST_BACKTRACE = 1;
         PKG_CONFIG_PATH = "${pkgs.openssl.dev}/lib/pkgconfig";
     };
 }
