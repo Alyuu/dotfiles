@@ -8,7 +8,7 @@
             rustc
             rustfmt
             sqlx-cli
-            pkg-config
+            pkgconfig
             openssl
         ];
 
