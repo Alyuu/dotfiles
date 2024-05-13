@@ -15,6 +15,7 @@
         sessionVariables = {
             CARGO_HOME = "${config.xdg.dataHome}/cargo";
             RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
+            RUST_BACTRACE = 1;
         };
     };
 }
