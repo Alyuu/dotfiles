@@ -29,7 +29,6 @@
 
         # Browser
         floorp
-        vieb
 
         # Fonts
 		nerdfonts
