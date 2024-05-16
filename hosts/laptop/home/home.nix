@@ -28,7 +28,6 @@
 		yazi
 
         # Browser
-        floorp
         vieb
 
         # Fonts
