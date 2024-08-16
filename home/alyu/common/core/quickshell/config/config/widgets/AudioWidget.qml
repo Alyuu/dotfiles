@@ -29,7 +29,7 @@ Text {
         var icon_id = Math.floor(node.audio.volume*icons.length)
         var output = icon_id >= icons.length ? icons[icons.length-1] : icons[icon_id]
         if (mouse.hovered) {
-            output = output + " " + (node.audio.volume*100) + "%"
+            output = output + "  " + Math.round(node.audio.volume*100) + "%"
         }
         if (node.audio.muted) {
             output = ""
