@@ -19,6 +19,7 @@
     ./rofi
     ./quickshell
     ./cava.nix
+    ./fastfetch.nix
   ]
   ++ (builtins.attrValues outputs.home-manager-modules);
 
