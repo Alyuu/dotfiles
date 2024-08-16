@@ -1,3 +1,11 @@
 # Alyu's dotfiles
 
-I just started some new NixOS dotfiles to explore the os and languaje
+My dotfiles for NixOS distro and hyprland window manager
+
+- Distro: NixOS
+- WM: Hyprland
+- Bar: Quickshell
+- Editor: Neovim (Nixvim)
+- Browser: Floorp
+- Audio visualizer: Cava
+

@@ -18,6 +18,7 @@
     ./waybar.nix
     ./rofi
     ./quickshell
+    ./cava.nix
   ]
   ++ (builtins.attrValues outputs.home-manager-modules);
 
