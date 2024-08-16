@@ -15,20 +15,21 @@ Text {
     ]
     property string no_connection: "󰤭"
 
-    text: no_connection
-
-    function setOutput() {
-        if (name == "") {
-            network.text = network.no_connection
-        } else {
+    text: {
+        var output = network.no_connection
+        if (name != "") {
             var icon_id = Math.floor((quality*icons.length)/100)
-            network.text = icon_id >= icons.length ? icons[icons.length-1] : icons[icon_id] + "  " + name
+            output = icon_id >= icons.length ? icons[icons.length-1] : icons[icon_id]
+            if (mouse.hovered) {
+                output = output + "  " + name
+            }
         }
+        return output
     }
 
     Process {
         id: nmcliProc
-        command: ["sh", "-c", "nmcli -t -f IN-USE,SSID,SIGNAL device wifi list | grep '^*'"]
+        command: ["sh", "-c", "nmcli device wifi rescan | nmcli -t -f IN-USE,SSID,SIGNAL device wifi list | grep '^*'"]
         running: true
 
         stdout: SplitParser {
@@ -46,7 +47,11 @@ Text {
         repeat: true
         onTriggered: {
             nmcliProc.running = true
-            setOutput()
         }
+    }
+
+    HoverHandler {
+        id: mouse
+        acceptedDevices: PointerDevice.Mouse | PointerDevice.TouchPad
     }
 }
