@@ -36,7 +36,7 @@
     };
   };
 
-  home.packages = with pkgs; [
+  home.packages = (with pkgs; [
     inputs.alyuu-nixvim.packages.${pkgs.system}.default
     fzf
     ripgrep
@@ -63,8 +63,10 @@
     erlang_26
     rebar3
     prismlauncher
+  ])
+  ++ (with pkgs-stable; [
     floorp
-  ];
+  ]);
 
   programs = {
       home-manager.enable = true;
