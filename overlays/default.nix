@@ -3,17 +3,17 @@
     modifications = final: prev: {
         delta = prev.delta.overrideAttrs (old: rec {
             pname = "delta";
-            version = "0.18.0";
+            version = "0.17.0-unstable-2024-08-12";
             src = prev.fetchFromGitHub {
                 owner = "dandavison";
-                repo = "delta";
-                rev = "refs/tags/0.18.0";
-                hash = "sha256-1UOVRAceZ4QlwrHWqN7YI2bMyuhwLnxJWpfyaHNNLYg=";
+                repo = pname;
+                rev = "a01141b72001f4c630d77cf5274267d7638851e4";
+                hash = "sha256-My51pQw5a2Y2VTu39MmnjGfmCavg8pFqOmOntUildS0=";
             };
             cargoDeps = old.cargoDeps.overrideAttrs (prev.lib.const {
               name = "${pname}-vendor.tar.gz";
               inherit src;
-              outputHash = "sha256-4XACgKxn9opAfI5bamz3zpPxDUhmD8qcL1p8onspVF0";
+              outputHash = "sha256-Rlc3Bc6Jh89KLLEWBWQB5GjoeIuHnwIVZN/MVFMjY24=";
             });
         });
     };
