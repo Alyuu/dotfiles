@@ -9,7 +9,11 @@
                 rev = "refs/tags/0.18.0";
                 hash = "sha256-1UOVRAceZ4QlwrHWqN7YI2bMyuhwLnxJWpfyaHNNLYg=";
             };
-            cargoHash = "sha256-/h7djtaTm799gjNrC6vKulwwuvrTHjlsEXbK2lDH+rc=";
+            cargoDeps = old.cargoDeps.overrideAttrs (prev.lib.const {
+              name = "delta-vendor.tar.gz";
+              inherit src;
+              outputHash = "sha256-/h7djtaTm799gjNrC6vKulwwuvrTHjlsEXbK2lDH+rc=";
+            });
         });
     };
 }
