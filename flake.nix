@@ -4,7 +4,7 @@
   inputs = {
     # Official packages
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+    # nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -30,7 +30,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... } @ inputs: 
+  outputs = { self, nixpkgs/* , nixpkgs-stable */, home-manager, ... } @ inputs: 
   let
     inherit (self) outputs;
     forAllSystems = nixpkgs.lib.genAttrs [
@@ -38,8 +38,8 @@
     ];
     inherit (nixpkgs) lib;
     configLib = import ./lib { inherit lib; };
-    pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
-    specialArgs = { inherit inputs outputs configLib nixpkgs pkgs-stable; };
+    # pkgs-stable = nixpkgs-stable.legacyPackages.x86_64-linux;
+    specialArgs = { inherit inputs outputs configLib nixpkgs /* pkgs-stable */; };
   in
   {
     nixos-modules = import ./modules/nixos;
