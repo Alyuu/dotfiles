@@ -2,6 +2,7 @@ import Quickshell
 import Quickshell.Hyprland
 // import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
+import Quickshell.Services.Notifications
 import QtQuick
 import "../widgets"
 import QtQuick.Layouts
@@ -62,8 +63,14 @@ Scope {
 
             RowLayout {
                 anchors.centerIn: parent
+                spacing: 15
 
                 ClockWidget {
+                    font: customFont
+                    color: "#8ec07c"
+                }
+
+                NotificationsWidget {
                     font: customFont
                     color: "#8ec07c"
                 }
