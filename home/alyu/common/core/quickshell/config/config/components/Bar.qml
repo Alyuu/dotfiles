@@ -37,6 +37,8 @@ Scope {
             color: "#282828"
 
             RowLayout {
+                spacing: 15
+
                 anchors {
                     left: parent.left
                     verticalCenter: parent.verticalCenter
@@ -84,8 +86,9 @@ Scope {
                 // }
 
                 PlayingWidget {
-                    font: customFont
-                    color: "#8ec07c"
+                    custom_font: customFont
+                    hover_color: "#928374"
+                    default_color: "#8ec07c"
                 }
 
                 NetworkWidget {

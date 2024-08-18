@@ -13,7 +13,7 @@ RowLayout {
 
     Component.onCompleted: {
         var workspaceComponent = Qt.createComponent("../components/HyprlandWorkspace.qml");
-        for (var i = 0; i <= nWorkspaces; i++) {
+        for (var i = 1; i <= nWorkspaces; i++) {
             var workspace = workspaceComponent
             .createObject(container, 
                 {
