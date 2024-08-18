@@ -2,7 +2,6 @@ import Quickshell
 import Quickshell.Hyprland
 // import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
-import Quickshell.Services.Mpris
 import QtQuick
 import "../widgets"
 import QtQuick.Layouts
@@ -83,14 +82,10 @@ Scope {
                 //     source: SystemTray.items.values[0].icon
                 //     fillMode: Image.PreserveAspectFit
                 // }
-                Component.onCompleted: {
-                    console.log(Mpris.players.values)
-                }
 
-                Text {
+                PlayingWidget {
                     font: customFont
                     color: "#8ec07c"
-                    text: "  " + Mpris.players.values[0].trackTitle
                 }
 
                 NetworkWidget {
