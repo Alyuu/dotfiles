@@ -11,6 +11,24 @@ RowLayout {
 
     spacing: 10
 
+    Rectangle {
+        id: bounding
+        height: content.height
+        color: "transparent"
+        clip: true
+        Layout.minimumWidth: text_width
+        width: text_width
+
+        Text {
+            id: content
+            color: mouse.hovered ? hover_color : default_color
+            font: custom_font
+            text: (Mpris.players.values.length > 0 && Mpris.players.values[0].trackTitle.length > 0) ? Mpris.players.values[0].trackTitle : ""
+            clip: true
+
+        }
+    }
+
     Text {
         text: (Mpris.players.values.length > 0 && Mpris.players.values[0].trackTitle.length > 0) ? "" : "󰝛"
         color: mouse.hovered ? hover_color : default_color
@@ -21,7 +39,7 @@ RowLayout {
             visible: mouse.hovered
             color: default_color
             font: parent.font
-            x: parent.width + text_width/2
+            x: -(parent.width + text_width/2)
 
             text: {
                 var state = "";
@@ -42,29 +60,11 @@ RowLayout {
         }
     }
 
-    Rectangle {
-        id: bounding
-        width: Math.min(text_width, content.width)
-        height: content.height
-        color: "transparent"
-        clip: true
-
-        Text {
-            id: content
-            color: mouse.hovered ? hover_color : default_color
-            font: custom_font
-            text: (Mpris.players.values.length > 0 && Mpris.players.values[0].trackTitle.length > 0) ? Mpris.players.values[0].trackTitle : ""
-            clip: true
-
-        }
-    }
-
     Timer {
         interval: 50
         running: true
         repeat: true
         onTriggered: {
-            bounding.width = Math.min(content.width, text_width)
             if (content.width > text_width) {
                 if (content.x <= -content.width) {
                     content.x = text_width;
