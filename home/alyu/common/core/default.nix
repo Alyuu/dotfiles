@@ -64,6 +64,7 @@
     rebar3
     prismlauncher
     floorp
+    imagemagick7
   ];
 
   programs = {

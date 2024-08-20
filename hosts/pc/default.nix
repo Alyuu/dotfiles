@@ -9,6 +9,7 @@
     "hosts/common/optional/games"
     "hosts/common/optional/drawing_tablet.nix"
     "hosts/common/optional/virtualisation.nix"
+    "hosts/common/optional/greetd.nix"
     "hosts/common/users/alyu"
   ]);
 
@@ -30,9 +31,10 @@
     displayManager.defaultSession = "hyprland";
     xserver = {
       enable = true;
-      displayManager = { gdm.enable = true; };
-      xkb.layout = "us";
-      xkb.variant = "altgr-intl";
+      xkb = {
+        layout = "us";
+        variant = "altgr-intl";
+      };
       videoDrivers = ["nvidia"];
     };
   };
