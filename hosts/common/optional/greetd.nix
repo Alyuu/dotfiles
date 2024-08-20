@@ -3,6 +3,7 @@
     services.greetd = {
         enable = true;
         restart = true;
+        vt = 3;
         settings = {
             default_session = {
                 command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
