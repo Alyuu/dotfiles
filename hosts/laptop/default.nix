@@ -22,7 +22,7 @@
   };
 
   networking = {
-      hostName = "pc";
+      hostName = "laptop";
       networkmanager.enable = true;
   };
 
