@@ -65,6 +65,7 @@
     prismlauncher
     floorp
     imagemagick7
+    nix-prefetch-github
   ];
 
   programs = {
