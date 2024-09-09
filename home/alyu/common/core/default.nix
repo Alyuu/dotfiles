@@ -14,12 +14,13 @@
     ./icons.nix
     ./ssh.nix
     ./spicetify.nix
-    ./zellij/zellij.nix
+    # ./zellij/zellij.nix
     ./waybar.nix
     ./rofi
     ./quickshell
     ./cava.nix
     ./fastfetch.nix
+    ./tmux.nix
   ]
   ++ (builtins.attrValues outputs.home-manager-modules);
 
