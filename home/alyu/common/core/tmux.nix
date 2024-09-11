@@ -3,6 +3,7 @@ let
     tmux-gruvbox = pkgs.tmuxPlugins.mkTmuxPlugin
         {
             pluginName = "tmux-gruvbox";
+            namePrefix = "";
             version = "unstable-2024-09-11";
             src = pkgs.fetchFromGitHub {
                 owner = "Alyuu";
