@@ -7,8 +7,8 @@ let
             src = pkgs.fetchFromGitHub {
                 owner = "Alyuu";
                 repo = "tmux-gruvbox";
-                rev = "61ec5d5f634d09dbf1570bb436d1e7a723105470";
-                sha256 = "sha256-8fplIHQTkqc2jdPvZo56hgfrCc7jwMdz2Z24gOKyyj8=";
+                rev = "be891d227bcecb98daa394c5013351e69686f383";
+                sha256 = "sha256-RwJMVc/O+dTeLydOBVnXvBRqwRZ45YiDap6TYCF6MzU=";
             };
         };
 in
