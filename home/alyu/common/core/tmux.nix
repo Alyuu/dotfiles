@@ -4,7 +4,7 @@ let
         {
             pluginName = "tmux-gruvbox";
             rtpFilePath = "tmux-gruvbox.tmux";
-            version = "unstable-2024-09-11";
+            version = "unstable-2024-09-12";
             src = pkgs.fetchFromGitHub {
                 owner = "Alyuu";
                 repo = "tmux-gruvbox";
