@@ -4,12 +4,12 @@ let
         {
             pluginName = "tmux-gruvbox";
             rtpFilePath = "tmux-gruvbox.tmux";
-            version = "unstable-2024-09-12";
+            version = "unstable-2024-09-11";
             src = pkgs.fetchFromGitHub {
                 owner = "Alyuu";
                 repo = "tmux-gruvbox";
-                rev = "be891d227bcecb98daa394c5013351e69686f383";
-                sha256 = "sha256-RwJMVc/O+dTeLydOBVnXvBRqwRZ45YiDap6TYCF6MzU=";
+                rev = "fab642a6a9499e7ac30e79898b5f108596d52f3a";
+                sha256 = "sha256-emwNSwDxKFHxBk/BAQP+ukxGv6FwfXykDmEf+8r43DQ=";
             };
         };
 in
