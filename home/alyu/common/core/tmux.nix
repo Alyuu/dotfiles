@@ -8,8 +8,8 @@ let
             src = pkgs.fetchFromGitHub {
                 owner = "Alyuu";
                 repo = "tmux-gruvbox";
-                rev = "119cf899190bdac4944ae59e3d3cdae249588c71";
-                sha256 = "sha256-emwNSwDxKFHxBk/BAQP+ukxGv6FwfXykDmEf+8r43DQ=";
+                rev = "590b704f2b41ae689bd7cfab89fc40f282a32640";
+                sha256 = "sha256-Dw1DLIxPT3vrwdu3tzTVvaQnV2dNeFrcB80Vij/bg7A=";
             };
         };
 in
@@ -34,6 +34,10 @@ in
             bind -n M-Right select-pane -R
             bind -n M-Up select-pane -U
             bind -n M-Down select-pane -D
+            bind -n M-S-Left resize-pane -L
+            bind -n M-S-Right resize-pane -R
+            bind -n M-S-Up resize-pane -U
+            bind -n M-S-Down resize-pane -D
             bind r source-file ~/.config/tmux/tmux.conf
         '';
     };
