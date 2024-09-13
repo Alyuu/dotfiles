@@ -20,6 +20,7 @@ in
         terminal = "kitty";
         shortcut = "a";
         keyMode = "vi";
+        escapeTime = 0;
         mouse = true;
         clock24 = true;
         historyLimit = 10000;
