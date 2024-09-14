@@ -64,7 +64,7 @@
     erlang_26
     rebar3
     prismlauncher
-    floorp
+    brave
     imagemagick7
     nix-prefetch-github
     flyctl
