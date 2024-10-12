@@ -6,7 +6,7 @@
     ./godot.nix
     ./fonts.nix
     ./alacritty.nix
-    ./kitty.nix
+    ./kitty
     ./yazi.nix
     ./gtk.nix
     ./qt.nix
