@@ -8,7 +8,7 @@
             size = 13;
         };
 
-        theme = "Alyu Theme";
+        theme = "Gruvbox Dark";
 
         settings = {
             scrollback_lines = 10000;
