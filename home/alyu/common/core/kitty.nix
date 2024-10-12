@@ -16,8 +16,8 @@
         };
         extraConfig = ''
             foreground #dee6b8
-            background #030503
-            color0  #030504
+            background #161a17
+            color0  #161a17
             color8  #738c73
             color1  #992e26
             color9  #e65545
@@ -34,8 +34,8 @@
             color7  #8aa88a
             color15 #dee6b8
             cursor  #dee6b8
-            cursor_text_color #030503
-            selection_foreground #030503
+            cursor_text_color #161a17
+            selection_foreground #161a17
             selection_background #dee6b8
         '';
     };
