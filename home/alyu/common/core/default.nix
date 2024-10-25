@@ -65,7 +65,7 @@
     rebar3
     prismlauncher
     brave
-    imagemagick7
+    imagemagick
     nix-prefetch-github
     flyctl
   ];
