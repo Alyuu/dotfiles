@@ -110,7 +110,7 @@
 			bind = 
             [
                 "$mainMod SHIFT, R, exec, pkill quickshell; sleep .5 && quickshell"
-				"$mainMod, RETURN, exec, $terminal"
+				"$mainMod, RETURN, exec, $terminal tmux"
 				"$mainMod, C, killactive,"
 				"$mainMod, M, exit,"
 				"$mainMod, E, exec, $fileManager"
