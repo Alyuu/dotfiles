@@ -8,7 +8,6 @@
             size = 13;
         };
 
-        themeFile = "Gruvbox Dark";
 
         settings = {
             scrollback_lines = 10000;
