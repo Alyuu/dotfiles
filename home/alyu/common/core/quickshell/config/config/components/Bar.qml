@@ -35,7 +35,7 @@ Scope {
             }
 
             height: 50
-            color: "#282828"
+            color: "#171a18"
 
             RowLayout {
                 spacing: 15

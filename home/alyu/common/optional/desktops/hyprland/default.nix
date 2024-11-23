@@ -70,11 +70,15 @@
 				};
 
                 shadow = {
-                    enabled = true;
-                    range = 5;
-                    sharp = true;
-                    color = "rgba(1a1a1aee)";
+                    enabled = false;
                 };
+                # shadow = {
+                #     enabled = true;
+                #     range = 0;
+                #     offset = "5 5";
+                #     sharp = true;
+                #     color = "rgba(679967ee)";
+                # };
 			};
 
 			animations = {

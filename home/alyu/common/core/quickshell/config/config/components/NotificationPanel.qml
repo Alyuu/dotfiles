@@ -13,7 +13,7 @@ PanelWindow {
     width: 500
     height: 600
 
-    color: "#282828"
+    color: "#171a18"
 
     WlrLayershell.layer: WlrLayer.Overlay
 
