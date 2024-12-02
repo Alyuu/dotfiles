@@ -13,7 +13,7 @@
     ./zsh
     ./icons.nix
     ./ssh.nix
-    ./spicetify.nix
+    # ./spicetify.nix
     # ./zellij/zellij.nix
     ./waybar.nix
     ./rofi

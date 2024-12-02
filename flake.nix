@@ -21,7 +21,7 @@
     };
 
     # Spicetify
-    spicetify.url = "github:Gerg-L/spicetify-nix";
+    # spicetify.url = "github:Gerg-L/spicetify-nix";
 
     # Quickshell
     quickshell = {
