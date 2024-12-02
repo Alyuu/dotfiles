@@ -18,7 +18,7 @@
     ./waybar.nix
     ./rofi
     ./quickshell
-    ./cava.nix
+    # ./cava.nix
     ./fastfetch.nix
     ./tmux.nix
   ]
