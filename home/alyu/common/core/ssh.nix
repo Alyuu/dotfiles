@@ -14,6 +14,15 @@
                 "~/.ssh/github-alyu"
             ];
         };
+        "digital_ocean" = {
+            host = "46.101.175.111";
+            user = "root";
+            forwardAgent = true;
+            identitiesOnly = true;
+            identityFile = [
+                "~/.ssh/digital_ocean"
+            ];
+        };
         "tfs" = {
             host = "tfs.comminus.hr";
             user = "git";

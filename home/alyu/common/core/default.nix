@@ -65,6 +65,7 @@
     rebar3
     prismlauncher
     brave
+    firefox
     imagemagick
     nix-prefetch-github
     flyctl
