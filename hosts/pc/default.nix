@@ -14,12 +14,15 @@
   ]);
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
+    boot = {
+        supportedFilesystems = ["ntfs"];
+        loader = {
+            efi = {
+                canTouchEfiVariables = true;
+            };
+            systemd-boot.enable = true;
+        };
     };
-    systemd-boot.enable = true;
-  };
 
   networking = {
       hostName = "pc";
