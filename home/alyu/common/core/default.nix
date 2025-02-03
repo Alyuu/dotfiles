@@ -69,6 +69,7 @@
     imagemagick
     nix-prefetch-github
     flyctl
+    ventoy
   ];
 
   programs = {
