@@ -70,6 +70,7 @@
     nix-prefetch-github
     flyctl
     ventoy
+    exfat
   ];
 
   programs = {
